@@ -36,6 +36,7 @@ const session =
     dir: "sessions",
     cookie: sessionCookie,
   });
+console.log("session: ", session);
 
 app.all("*", createRequestHandler({ build }));
 
